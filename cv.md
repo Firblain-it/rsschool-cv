@@ -18,6 +18,7 @@ Currently, I am studying programming on my own, namely the front-end direction. 
 - ReactJS
 ***
 ## Code example
+The **splitString** function, which accepts a string **str**, splits it into parts of 2 characters each, and then returns an array of the resulting parts.
 ```
 function splitString(str) {
   let result = [];
