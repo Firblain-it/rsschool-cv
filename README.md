@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/Firblain-it/rsschool-cv/blob/gh-pages/cv.md
+[https://github.com/Firblain-it/rsschool-cv/](https://firblain-it.github.io/rsschool-cv/)
