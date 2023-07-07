@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Diana Diesiatova CV</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="icon" href="assets/favicon.ico" >
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <div class="header-inner">
+          <div class="avatar">
+            <img class="avatar-img" src="./assets/avatar.jpg" alt="my avatar" >
+          </div>
+          <div>
+            <h1 class="title">Diana Diesiatova</h1>
+            <p class="subtitle">Frontend developer</p>
+          </div>
+          <div class="contacts">
+            <h2 class="contacts-title">My contacts:</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100088110017941"
+                  class="contacts-link"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  href="https://www.linkedin.com/in/diana-diesiatova-164a40256/"
+                  class="contacts-link"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  href="https://t.me/firblain"
+                  class="contacts-link"
+                  target="_blank"
+                  >Telegram</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  href="mailto:diesiatova.it@gmail.com"
+                  class="contacts-link"
+                  target="_blank"
+                  >diesiatova.it@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-inner">
+          <section class="about" id="about">
+            <h2 class="section-title">About me</h2>
+            <div class="about-text">
+              In addition to my main field of cultural studies, I am also developing in the front-end direction. A little over a year ago, I decided to try myself in the IT field. I started my journey with manual testing, having completed a one-month online course, but when I realized that it was not for me, I began to look at other directions. That's how I ended up in the front end. I was incredibly fascinated by it and that is why now my goal is to become a developer and a real specialist in this field. And I am sure that my thirst for knowledge and constant development will allow me to achieve this
+            </div>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="section-title">My skills</h2>
+            <ul class="skills-list">
+              <li class="skill-item">HTML</li>
+              <li class="skill-item">CSS</li>
+              <li class="skill-item">JS</li>
+              <li class="skill-item">SASS</li>
+              <li class="skill-item">React JS</li>
+              <li class="skill-item">BEM metodology</li>
+              <li class="skill-item">Figma</li>
+            </ul>
+          </section>
+          <section class="projects" id="projects">
+            <h2 class="section-title">Projects</h2>
+
+          </section>
+          <section class="education" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-inner">
+              <div class="education-schools">
+                <h3>Universities</h3>
+                <strong>Petro Mohyla Black Sea National University</strong>
+                <p>Years: 2020-2021</p>
+                <p>Faculty: Computer Science</p>
+                <p>Subject Area: Computer Science</p>
+                <br>
+                <strong>V. N. Karazin Kharkiv National University</strong>
+                <p>Years: 2021-now</p>
+                <p>Faculty: Phylosophy</p>
+                <p>Subject Area: Culturology</p>
+              </div>
+              <div class="education-language">
+                <h3>Languages</h3>
+                <p>Ukranian: native</p>
+                <p>Russian: native</p>
+                <p>English: intermediate</p>
+              </div>
+            </div>
+          </section>
+          <section class="example">
+            <h2 class="section-title">Code example</h2>
+            <div class="example-inner">
+              <p class="example-text">
+                An example of solving a problem from <span><a href="https://www.codewars.com/kata/525f50e3b73515a6db000b83" target="_blank">codevars</a></span>. Write a function
+                that accepts an array of 10 integers (between 0 and 9), that
+                returns a string of those numbers in the form of a phone number.
+              </p>
+              <pre class="example-code">
+                <code>
+  function createPhoneNumber(numbers) {
+    let template = "(000) 000-0000";
+    let phoneNumber = "";
+    for (let i = 0, j = 0; i &lt; template.length; i++) {
+      if (template[i] == "0") {
+        phoneNumber += numbers[j];
+        j++;
+      } else {
+        phoneNumber += template.substr(i, 1);
+      }
+    }
+  return phoneNumber;
+  } 
+                </code>
+              </pre>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <a
+            href="https://github.com/Firblain-it"
+            class="githab-link"
+            target="_blank"
+          >
+            <img
+              class="github-logo"
+              src="./assets/github.svg"
+              alt="github-logo"
+            >
+            <p>My github</p>
+          </a>
+          <p class="year" >2023</p>
+          <a class="school-link" href="https://rs.school/js/" target="_blank"
+            ><img
+              class="school-logo"
+              src="./assets/rs_school.svg"
+              alt="school-logo"
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
